@@ -20,11 +20,86 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ksw-dP-OUw">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem title="Switch Views" id="VW4-qB-mx8">
+                                        <connections>
+                                            <action selector="switchViewsWithSender:" destination="BYZ-38-t0r" id="gTn-zf-2O8"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Ksw-dP-OUw" secondAttribute="trailing" id="Hgc-Ir-lAY"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ksw-dP-OUw" secondAttribute="bottom" id="LIQ-wD-PDl"/>
+                            <constraint firstItem="Ksw-dP-OUw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="WiF-SR-Umv"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Blue View Controller-->
+        <scene sceneID="oTE-KD-9Vj">
+            <objects>
+                <viewController storyboardIdentifier="Blue" id="swQ-e4-gJa" customClass="BlueViewController" customModule="View_Switcher" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kju-Wd-Tdj"/>
+                        <viewControllerLayoutGuide type="bottom" id="gcE-Rn-fVe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gJx-hc-iCJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N77-7z-rur">
+                                <rect key="frame" x="155" y="318" width="64" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Press Me">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="blueButtonPressed:" destination="swQ-e4-gJa" eventType="touchUpInside" id="3WG-q6-2ul"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.24173899067984772" green="0.45944621222637494" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hhj-KB-ibX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="652" y="127"/>
+        </scene>
+        <!--Yellow View Controller-->
+        <scene sceneID="FXz-TI-udT">
+            <objects>
+                <viewController storyboardIdentifier="Yellow" id="sWo-mR-N87" customClass="YellowViewController" customModule="View_Switcher" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Kqb-3r-9jq"/>
+                        <viewControllerLayoutGuide type="bottom" id="3MY-hC-aiT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tnU-Hu-2JX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jhT-Cr-fYl">
+                                <rect key="frame" x="155" y="318" width="64" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Press Me"/>
+                                <connections>
+                                    <action selector="yellowButtonPressed:" destination="sWo-mR-N87" eventType="touchUpInside" id="R7e-4c-GWy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.81458991707553141" blue="0.37413160862301909" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HhX-cJ-zRT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1369" y="266"/>
         </scene>
     </scenes>
 </document>
